@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="container ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Bootstrap">
 
@@ -22,13 +22,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#bag">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#sub">Subscribe</a>
                   </li>
                 
               
@@ -133,7 +133,7 @@
       </section>
       <!-- catagories end -->
       <!-- shows section start  -->
-      <section class="container my-5">
+      <section class="container my-5 "id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -179,7 +179,9 @@
           </div>
         </div>
       </section>
-      <section class="container my-5">
+      <!-- shows section end  -->
+      <!-- bagpack section start  -->
+      <section class="container my-5"id="bag">
         <h2>Bagpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -225,9 +227,30 @@
           </div>
         </div>
       </section>
-      <!-- shows section end -->
-
+      <!-- Bagpack section end -->
+      <!-- subscribe section start  -->
+      <section style="height: 300px;" class="container d-flex justify-content-center align-items-center rounded-3 bg-info"id="sub">
+        <div>
+          <h2>Lets stay in touch</h2>
+      
+          <p> Get updates on sale,get more information</p>
+      
+          <form>
+            <div class="mb-2">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+            </div>
+      
+      
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- subscribe section end -->
     </main>
+    <footer class="mt-5">
+      <p class="text-center"><small>©2023,panda commerce .All rights reserved</small></p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
